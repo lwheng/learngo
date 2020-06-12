@@ -10,7 +10,7 @@ func Years(h int) int {
 func YearsTwo(h int) int {
 	count := 0
 	for i := 0; i < h; i++ {
-		count += i * 7
+		count += 7
 	}
 	return count
 }

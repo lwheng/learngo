@@ -5,3 +5,12 @@ package dog
 func Years(h int) int {
 	return h * 7
 }
+
+// YearsTwo converts human years to dog years
+func YearsTwo(h int) int {
+	count := 0
+	for i := 0; i < h; i++ {
+		count += i * 7
+	}
+	return count
+}

@@ -6,9 +6,18 @@ import (
 	du "github.com/lwheng/learngo/dog/utils"
 )
 
+type canine struct {
+	name string
+	age  int
+}
+
 func main() {
-	age := 21
-	fmt.Println("John is", age, "years old. In dog years he would be", d.Years(age), "years old.")
+	fido := canine{
+		name: "Fido",
+		age:  d.Years(10),
+	}
+	fmt.Println(fido)
+	fmt.Println(d.YearsTwo(20))
 
 	d.Bark()
 	// d.Woof() // This doesn't work because package 'dog' does not have function Woof

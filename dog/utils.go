@@ -1,3 +1,4 @@
+// Package dog allows you to learn more about dogs
 package dog
 
 import (
